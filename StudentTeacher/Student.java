@@ -15,6 +15,7 @@ class Student {
 
     public void enrollCourse(Course course) {
         enrolledCourses.add(course);
+        course.addStudent(this);
     }
 
     public String getName() {
